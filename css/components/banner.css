@@ -87,11 +87,42 @@
 /* ------ desktop styles ------ */
 
 @media screen and (min-width: 1024px) {
+  .banner {
+    padding-top: 6rem;
+  }
+
+  .banner::before {
+    content: "";
+    width: clamp(25rem, 40vw, 60rem);
+    height: clamp(25rem, 40vw, 33rem);
+    background-color: var(--green-400);
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
   .banner .image-desktop {
     display: block;
+    width: clamp(20.875rem, 40vw, 33.375rem);
+
+    height: auto;
   }
 
   .banner .images-mobile {
     display: none;
+  }
+
+  .banner .content {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .banner .content .text {
+    text-align: start;
+    justify-content: start;
+    align-items: start;
+
+    width: clamp(28.125rem, 40vw, 32rem);
   }
 }
