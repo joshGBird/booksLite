@@ -46,6 +46,7 @@
 
 .tag {
   padding-bottom: 0.25rem;
+  display: inline-block;
 }
 
 /* ------ desktop styles ------ */

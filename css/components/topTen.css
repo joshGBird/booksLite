@@ -1,0 +1,142 @@
+/* <section class="top-ten">
+        <div class="container">
+          <div class="header-top-ten">
+            <div class="slider-control">
+              <span class="tag">This is just getting started 😎</span>
+              <h2 class="">Top 10 - top 6</h2>
+              <div class="arrows"></div>
+            </div>
+          </div>
+
+          <!-- ------ cards container ------ -->
+          <div class="book-cards">
+            <div class="container">
+              <!-- #10 lean startup -->
+              <div class="card">
+                <img
+                class="card-image"
+                  src="media/img/book-covers/card-image-lean-startup.png"
+                  alt="card-image-lean-startup"
+                />
+                <div class="text">
+                  <h4 class="title">10.The lean startup</h4>
+                  <div class="rating"><span>4.2</span></div>
+                  <p class="description">
+                    A business book that introduces the concept of lean startup
+                    methodology. It advocates for a scientific approach to
+                    entrepreneurship.
+                  </p>
+                  <a href="" class="button-blue ghost">Buy this book</a>
+                </div>
+              </div>
+              <!-- #9 Harry potter and the prisoner of azkaban  -->
+              <div class="card">
+                <img
+                class="card-image"
+                  src="media/img/book-covers/card-image-prisoner-of-azkaban.png"
+                  alt="card-image-lean-startup"
+                />
+                <div class="text">
+                  <h4 class="title">09.The prisoner of Azkaban</h4>
+                  <div class="rating"><span>4.2</span></div>
+                  <p class="description">
+                    Harry Potter returns to Hogwarts School. As the infamous
+                    prisoner, Sirius Black, escapes from the wizarding prison of
+                    Azkaban
+                  </p>
+                  <a href="#" class="button-yellow ghost">Buy this book</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> */
+
+.top-ten {
+  padding-top: 7.5rem;
+}
+
+.top-ten .tag {
+  padding-bottom: 0.5rem;
+}
+
+.top-ten .slider-control {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-top-ten {
+  padding-bottom: 10rem;
+}
+
+.top-ten .book-cards {
+  width: 100%;
+  position: relative;
+}
+
+.top-ten .book-cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  padding: 9.6rem 1rem 1.5rem;
+}
+
+.top-ten .book-cards .card:not(:first-of-type) {
+  display: none;
+}
+
+.top-ten .card .title {
+  color: var(--neutral-text);
+  padding-bottom: 0.75rem;
+}
+
+.top-ten .card .description {
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.book-cards .ten {
+  background: var(--blue-50);
+  border-radius: 1rem;
+}
+.book-cards .nine {
+  background: var(--yellow-50);
+  border-radius: 1rem;
+}
+
+.top-ten .card-image {
+  width: 11rem;
+  height: auto;
+}
+
+.top-ten .card-image-container {
+  position: absolute;
+  top: -30%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* tablet styles */
+
+@media screen and (min-width: 640px) {
+  .top-ten .book-cards .card:not(:first-of-type) {
+    display: flex;
+  }
+
+  .top-ten .book-cards {
+    width: 150%;
+    position: relative;
+  }
+
+  .top-ten .book-cards .container {
+    width: 100%;
+    gap: 2rem;
+    display: flex;
+  }
+}

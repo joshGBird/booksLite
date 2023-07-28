@@ -77,7 +77,7 @@
     --heading-4: 1.25rem;
 
     /* letter spacing */
-    --heading-2-letter-spacing: 2px;
+    --heading-2-letter-spacing: -1.5px;
   }
 }
 
