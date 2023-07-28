@@ -1,0 +1,45 @@
+.maze-runner-section {
+  padding-bottom: 6.25rem;
+}
+.maze-runner-section .wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.maze-runner-section .image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  order: 2;
+  position: relative;
+}
+
+.maze-runner-section .image-container::before {
+  content: "";
+  position: absolute;
+  top: 2.5rem;
+  z-index: var(--z-negative);
+  background: linear-gradient(180deg, #66c497 0%, #ccebdc 100%);
+  height: 17.5rem;
+  width: calc(100% + 32px);
+}
+
+.maze-runner-section .maze-runner-image {
+  width: 15.625rem;
+  height: auto;
+}
+
+.maze-runner-section .text {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.maze-runner-section .text h2 {
+  padding-bottom: 0.75rem;
+}
+
+.maze-runner-section .text .description {
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+}

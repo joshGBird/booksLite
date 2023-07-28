@@ -16,3 +16,5 @@ To create a structure like this, you should use SCSS instead. */
 @import url("components/topTen.css");
 @import url("components/topFive.css");
 @import url("components/jkRowling.css");
+@import url("components/topThree.css");
+@import url("components/topTwo.css");
