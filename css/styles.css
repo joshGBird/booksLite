@@ -7,3 +7,7 @@ To create a structure like this, you should use SCSS instead. */
 /* ------ import our base components ------  */
 @import url("components/base.css");
 @import url("components/fonts.css");
+@import url("components/layout.css");
+
+/* ------ import the components for the landing page ------ */
+@import url("components/header.css");

@@ -97,6 +97,14 @@
   --purple-700: #6d28d9;
   --purple-800: #5b21b6;
   --purple-900: #4c1d95;
+
+  /* header hight  */
+  --header-height: 3.5rem;
+
+  /* Stacking context */
+  --z-negative: -1;
+  --z-normal: 1;
+  --z-sticky: 50;
 }
 
 body {
@@ -112,4 +120,8 @@ button {
 
 a {
   text-decoration: none;
+}
+
+li {
+  list-style: none;
 }
