@@ -11,3 +11,4 @@ To create a structure like this, you should use SCSS instead. */
 
 /* ------ import the components for the landing page ------ */
 @import url("components/header.css");
+@import url("components/banner.css");
