@@ -1,0 +1,32 @@
+.it-section .wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.it-section .image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  order: 2;
+  position: relative;
+}
+
+.it-section .image-it {
+  width: 18.75rem;
+  height: auto;
+}
+
+.it-section .text {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.it-section .text h2 {
+  padding-bottom: 0.75rem;
+}
+
+.it-section .text .description {
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+}
