@@ -40,8 +40,9 @@
 }
 .banner .images-mobile .image-side {
   width: clamp(12.5rem, 45vw, 18.75rem);
-  height: auto;
+  height: 18.43825rem;
   flex-shrink: 0;
+  margin-bottom: 1rem;
 }
 
 .tag {
