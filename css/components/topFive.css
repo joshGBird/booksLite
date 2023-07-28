@@ -1,5 +1,6 @@
 .top-five {
   padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
 }
 
 .top-five h2 {
@@ -65,6 +66,7 @@
 @media screen and (min-width: 1024px) {
   .top-five {
     padding-top: 13.75rem;
+    padding-bottom: 13.75rem;
   }
   .top-five .top-five-section {
     flex-direction: row;
