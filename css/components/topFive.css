@@ -1,6 +1,6 @@
 .top-five {
   padding-top: 6.25rem;
-  padding-bottom: 6.25rem;
+  padding-bottom: 2.25rem;
 }
 
 .top-five h2 {
@@ -66,7 +66,7 @@
 @media screen and (min-width: 1024px) {
   .top-five {
     padding-top: 13.75rem;
-    padding-bottom: 13.75rem;
+    padding-bottom: 5rem;
   }
   .top-five .top-five-section {
     flex-direction: row;
@@ -85,8 +85,11 @@
     width: clamp(22rem, 40vw, 36.25rem);
   }
 
-  .top-five .top-five-section .image-container {
+  .top-five .top-five-section .image-container.red-bg {
     margin-left: 3.5rem;
+  }
+  .top-five .top-five-section .image-container.blue-bg {
+    margin-right: 3.5rem;
   }
 
   .top-five .top-five-section {

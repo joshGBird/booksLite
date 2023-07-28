@@ -1,0 +1,84 @@
+.jk-rowling-section {
+  background: var(--neutral-black);
+  height: 44rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.jk-rowling-section .wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.jk-rowling-section .text {
+  padding-top: 4rem;
+  text-align: center;
+}
+
+.jk-rowling-section .text .quote {
+  font-family: var(--title-font);
+  font-weight: var(--normal-font);
+  line-height: var(--heading-line-height);
+  font-size: var(--display-3);
+  color: var(--neutral-bg);
+  letter-spacing: -1px;
+  letter-spacing: var(--display-letter-spacing);
+  padding-bottom: 2rem;
+}
+
+.jk-rowling-section .text .quote span {
+  color: var(--green-400);
+  font-weight: var(--bold-font);
+}
+
+.jk-rowling-section .text .author {
+  font-size: 1.5rem;
+  color: var(--neutral-white);
+  opacity: 0.5;
+  font-style: italic;
+}
+
+.jk-rowling-section .jk-rowling-image {
+  width: clamp(21.875rem, 60vw, 32rem);
+  height: clamp(21.875rem, 60vw, 32rem);
+  object-fit: cover;
+  bottom: 0;
+}
+
+/* styles for tablet */
+@media screen and (min-width: 640px) {
+  .jk-rowling-section {
+    height: 50rem;
+  }
+}
+
+/* styles for desktop  */
+
+@media screen and (min-width: 1024px) {
+  .jk-rowling-section {
+    height: clamp(45rem, 70vw, 50rem);
+  }
+  .jk-rowling-section .wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .jk-rowling-section .text {
+    padding-top: initial;
+    text-align: left;
+    width: clamp(30rem, 45vw, 34.375rem);
+  }
+
+  .jk-rowling-section .jk-rowling-image {
+    width: clamp(38rem, 60vw, 46.875rem);
+    height: clamp(38rem, 60vw, 46.875rem);
+    position: absolute;
+    bottom: 0;
+    right: -10%;
+  }
+}
