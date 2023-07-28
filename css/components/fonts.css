@@ -1,0 +1,188 @@
+/* @font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: local("Inter"), url("/fonts/Inter-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: auto;
+  src: local("Inter"), url("/fonts/Inter-SemiBold.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: auto;
+  src: local("Inter"), url("/fonts/Inter-Bold.ttf") format("ttf");
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+:root {
+  /* font family  */
+  --title-font: "Inter", sans-serif;
+  --body-font: "Inter", sans-serif;
+
+  /* body size  */
+  --body-1: 1rem;
+  --body-2: 0.875rem;
+  --body-3: 0.75rem;
+
+  /* display size  */
+  --display-1: 3rem;
+  --display-2: 2.5rem;
+  --display-3: 2.25rem;
+
+  /* heading size  */
+  --heading-1: 2rem;
+  --heading-2: 1.5rem;
+  --heading-3: 1.25rem;
+  --heading-4: 1.125rem;
+
+  /* weight */
+  --normal-font: 400;
+  --semi-bold-font: 600;
+  --bold-font: 700;
+
+  /* line height  */
+  --display-line-height: 120%;
+  --heading-line-height: 130%;
+  --body-line-height: 180%;
+
+  /* letter spacing  */
+  --display-1-letter-spacing: -2px;
+  --display-letter-spacing: -2px;
+  --heading-1-letter-spacing: -2px;
+  --heading-2-letter-spacing: -1px;
+  --heading-small-letter-spacing: -1px;
+}
+
+@media screen and (min-width: 640px) {
+  :root {
+    /* display size tablet */
+    --display-1: 3.5rem;
+    --display-2: 3rem;
+    --display-3: 2.5rem;
+
+    /* heading size tablet */
+    --heading-1: 2.5rem;
+    --heading-2: 2rem;
+    --heading-3: 1.5rem;
+    --heading-4: 1.25rem;
+
+    /* letter spacing */
+    --heading-2-letter-spacing: 2px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  :root {
+    /* display size tablet */
+    --display-1: 4rem;
+    --display-2: 3.5rem;
+    --display-3: 3rem;
+
+    /* body size  */
+    --body-1: 1.125rem;
+    --body-2: 1rem;
+    --body-3: 0.875rem;
+
+    --display-1-letter-spacing: -3px;
+  }
+}
+
+/* ------ classes for typography ------  */
+
+/* display  */
+.display-1 {
+  font-family: var(--title-font);
+  font-weight: var(--bold-font);
+  line-height: var(--display-line-height);
+  font-size: var(--display-1);
+  letter-spacing: var(--display-1-letter-spacing);
+  color: var(--neutral-title);
+}
+
+.display-2 {
+  font-family: var(--title-font);
+  font-weight: var(--bold-font);
+  line-height: var(--display-line-height);
+  font-size: var(--display-2);
+  letter-spacing: var(--display-letter-spacing);
+  color: var(--neutral-title);
+}
+
+.display-3 {
+  font-family: var(--title-font);
+  font-weight: var(--bold-font);
+  line-height: var(--display-line-height);
+  font-size: var(--display-3);
+  letter-spacing: var(--display-letter-spacing);
+  color: var(--neutral-title);
+}
+
+/* heading */
+.heading-1 {
+  font-family: var(--title-font);
+  font-weight: var(--semi-bold-font);
+  line-height: var(--heading-line-height);
+  font-size: var(--heading-1);
+  letter-spacing: var(--heading-1-letter-spacing);
+  color: var(--neutral-title);
+}
+
+.heading-2 {
+  font-family: var(--title-font);
+  font-weight: var(--semi-bold-font);
+  line-height: var(--heading-line-height);
+  font-size: var(--heading-2);
+  letter-spacing: var(--heading-2-letter-spacing);
+  color: var(--neutral-title);
+}
+
+.heading-3 {
+  font-family: var(--title-font);
+  font-weight: var(--semi-bold-font);
+  line-height: var(--heading-line-height);
+  font-size: var(--heading-3);
+  letter-spacing: var(--heading-small-letter-spacing);
+  color: var(--neutral-title);
+}
+
+.heading-3 {
+  font-family: var(--title-font);
+  font-weight: var(--semi-bold-font);
+  line-height: var(--heading-line-height);
+  font-size: var(--heading-4);
+  letter-spacing: var(--heading-small-letter-spacing);
+  color: var(--neutral-title);
+}
+
+/* body */
+.body-1-regular {
+  font-family: var(--body-font);
+  font-weight: var(--normal-font);
+  line-height: var(--body-line-height);
+  font-size: var(--body-1);
+  color: var(--neutral-text);
+}
+.body-2-regular {
+  font-family: var(--body-font);
+  font-weight: var(--normal-font);
+  line-height: var(--body-line-height);
+  font-size: var(--body-2);
+  color: var(--neutral-text);
+}
+.body-3-regular {
+  font-family: var(--body-font);
+  font-weight: var(--normal-font);
+  line-height: var(--body-line-height);
+  font-size: var(--body-3);
+  color: var(--neutral-text);
+}

@@ -1,0 +1,115 @@
+/* 
+@media screen and (min-width : 360px){
+
+}
+
+@media screen and (min-width : 640px){
+
+}
+
+@media screen and (min-width : 1024px){
+
+}
+
+@media screen and (min-width : 1440px){
+
+}
+
+
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* ------ colors ------ */
+
+  /* neutrals */
+  --neutral-white: #ffffff;
+  --neutral-bg: #f8fafe;
+  --neutral-bg-alt: #f3f5f7;
+  --neutral-border: #e6ebef;
+  --neutral-lighter: #6f8590;
+  --neutral-light: #5a6d77;
+  --neutral-text: #415058;
+  --neutral-title: #19272e;
+  --neutral-black: #000000;
+
+  /* green */
+  --green-50: #e6f6ee;
+  --green-100: #ccebdc;
+  --green-200: #99d8ba;
+  --green-300: #66c497;
+  --green-400: #34b175;
+  --green-500: #019d52;
+  --green-600: #017e42;
+  --green-700: #005e31;
+  --green-800: #004f29;
+  --green-900: #001f10;
+
+  /* blue */
+  --blue-50: #e7f6fd;
+  --blue-100: #a6ddf8;
+  --blue-200: #7accf5;
+  --blue-300: #4ebbf2;
+  --blue-400: #22aaee;
+  --blue-500: #1090d0;
+  --blue-600: #0d73a7;
+  --blue-700: #09577d;
+  --blue-800: #063a53;
+  --blue-900: #031d2a;
+
+  /* yellow */
+  --yellow-50: #fcf6e8;
+  --yellow-100: #f7e4be;
+  --yellow-200: #f3d79d;
+  --yellow-300: #f0c97c;
+  --yellow-400: #ecbc5b;
+  --yellow-500: #e8ad3b;
+  --yellow-600: #d09318;
+  --yellow-700: #9c6e12;
+  --yellow-800: #68490c;
+  --yellow-900: #342506;
+
+  /* red */
+  --red-50: #fbe9ed;
+  --red-100: #f5c2ca;
+  --red-200: #f0a3b0;
+  --red-300: #eb8495;
+  --red-400: #e6657b;
+  --red-500: #e14760;
+  --red-600: #cc213e;
+  --red-700: #99192e;
+  --red-800: #66111f;
+  --red-900: #33080f;
+
+  /* purple */
+  --purple-50: #f5f3ff;
+  --purple-100: #ede9fe;
+  --purple-200: #ddd6fe;
+  --purple-300: #c4b5fd;
+  --purple-400: #a78bfa;
+  --purple-500: #8b5cf6;
+  --purple-600: #7c3aed;
+  --purple-700: #6d28d9;
+  --purple-800: #5b21b6;
+  --purple-900: #4c1d95;
+}
+
+body {
+  color: var(--neutral-text);
+  font-family: var(--body-font);
+  overflow-x: hidden;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}

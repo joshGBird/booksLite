@@ -1,0 +1,9 @@
+/* Note: Importing styles with vanilla CSS is bad practice (performance of the site). Since this is an imaginary project, it was decided to do it this way because it's better for readability and structure. 
+
+However, it's important to point out that you should never do this for a real production project.
+
+To create a structure like this, you should use SCSS instead. */
+
+/* ------ import our base components ------  */
+@import url("components/base.css");
+@import url("components/fonts.css");
