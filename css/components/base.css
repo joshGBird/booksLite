@@ -107,6 +107,12 @@
   --z-sticky: 50;
 }
 
+@media screen and (min-width: 1024px) {
+  :root {
+    --header-height: 4rem;
+  }
+}
+
 body {
   color: var(--neutral-text);
   font-family: var(--body-font);
