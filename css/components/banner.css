@@ -1,12 +1,97 @@
 /* <section class="banner">
-<div class="wrapper">
-  <div class="content">
-    <div class="text">
-      <span class="tag">Let your imagination fly ✨</span>
-      <h1 class="title display-1">Discover your new favorite book</h1>
-      <a href="#" class="button-green">Go explore</a>
-    </div>
-    <img src="/media/img/banner/books-banner.png" alt="books-banner" />
-  </div>
-</div>
-</section> */
+        <div class="wrapper">
+          <div class="content">
+            <div class="text">
+              <span class="tag body-2-regular"
+                >Let your imagination fly ✨</span
+              >
+              <h1 class="title display-1">Discover your new favorite book</h1>
+              <a href="#" class="button green">Go explore</a>
+            </div>
+            <img
+              class="image-desktop"
+              src="/media/img/banner/books-banner.png"
+              alt="books-banner"
+            />
+            <div class="images-mobile">
+              <img
+                class="image-side"
+                src="media/img/book-covers/book-cover-maze-runner.png"
+                alt="book-cover-maze-runner.png"
+              />
+              <img
+                class="image-center"
+                src="media/img/book-covers/book-cover-three-musketeers.png"
+                alt="book-covers/book-cover-three-musketeers.png"
+              />
+              <img
+                class="image-side"
+                src="media/img/book-covers/book-cover-odyssey.png"
+                alt="book-covers/book-cover-odyssey.png"
+              />
+            </div>
+          </div>
+        </div>
+      </section> */
+
+.banner {
+  width: 100%;
+  padding-top: 3rem;
+  position: relative;
+}
+
+.banner .content,
+.banner .content .text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .content .text {
+  margin-bottom: 4rem;
+}
+
+.banner .title {
+  margin-bottom: 2rem;
+}
+
+.banner .image-desktop {
+  display: none;
+}
+
+.banner .images-mobile {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0rem;
+}
+
+.banner .images-mobile .image-center {
+  width: clamp(15.625rem, 50vw, 21.875rem);
+  height: auto;
+  flex-shrink: 0;
+}
+.banner .images-mobile .image-side {
+  width: clamp(12.5rem, 45vw, 18.75rem);
+  height: auto;
+  flex-shrink: 0;
+}
+
+.tag {
+  padding-bottom: 0.25rem;
+}
+
+/* ------ desktop styles ------ */
+
+@media screen and (min-width: 1024px) {
+  .banner .image-desktop {
+    display: block;
+  }
+
+  .banner .images-mobile {
+    display: none;
+  }
+}
