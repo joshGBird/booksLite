@@ -1,39 +1,3 @@
-/* <section class="banner">
-        <div class="wrapper">
-          <div class="content">
-            <div class="text">
-              <span class="tag body-2-regular"
-                >Let your imagination fly ✨</span
-              >
-              <h1 class="title display-1">Discover your new favorite book</h1>
-              <a href="#" class="button green">Go explore</a>
-            </div>
-            <img
-              class="image-desktop"
-              src="/media/img/banner/books-banner.png"
-              alt="books-banner"
-            />
-            <div class="images-mobile">
-              <img
-                class="image-side"
-                src="media/img/book-covers/book-cover-maze-runner.png"
-                alt="book-cover-maze-runner.png"
-              />
-              <img
-                class="image-center"
-                src="media/img/book-covers/book-cover-three-musketeers.png"
-                alt="book-covers/book-cover-three-musketeers.png"
-              />
-              <img
-                class="image-side"
-                src="media/img/book-covers/book-cover-odyssey.png"
-                alt="book-covers/book-cover-odyssey.png"
-              />
-            </div>
-          </div>
-        </div>
-      </section> */
-
 .banner {
   width: 100%;
   padding-top: 3rem;
