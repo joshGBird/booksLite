@@ -32,6 +32,11 @@
   border: 1px solid var(--blue-600);
 }
 
+.button.purple {
+  background-color: var(--purple-600);
+  border: 1px solid var(--purple-600);
+}
+
 .button.blue-ghost {
   border: 1px solid var(--blue-100);
   color: var(--blue-600);

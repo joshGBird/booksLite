@@ -1,3 +1,7 @@
+.it-section {
+  padding-bottom: 11.25rem;
+}
+
 .it-section .wrapper {
   display: flex;
   flex-direction: column;
@@ -15,11 +19,36 @@
 .it-section .image-it {
   width: 18.75rem;
   height: auto;
+  position: relative;
+}
+
+.it-section .image-container::before {
+  content: "";
+  width: 19.688rem;
+  height: 22.313rem;
+  background: url("../../media/img/assets/balloon-svg.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -2rem;
+  left: auto;
+  right: auto;
+}
+
+.it-section .image-container::after {
+  content: "";
+  width: 18rem;
+  height: 8.125rem;
+  background: url("../../media/img/assets/balloon-line.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -6.5rem;
+  bottom: -11rem;
+  z-index: -1;
 }
 
 .it-section .text {
   text-align: center;
-  padding-bottom: 3rem;
+  padding-bottom: 5rem;
 }
 
 .it-section .text h2 {

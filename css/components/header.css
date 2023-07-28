@@ -84,7 +84,8 @@
 
   .header .menu-button {
     display: block;
-    background-color: red;
+    background-image: url("../../media/img/assets/menu-icon.svg");
+    background-repeat: no-repeat;
     position: relative;
     width: 1.5rem;
     height: 1.5rem;

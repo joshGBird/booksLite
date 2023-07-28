@@ -1,0 +1,54 @@
+.rich-dad-section .wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.rich-dad-section .image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding-bottom: 3rem;
+}
+
+.rich-dad-section .image-container::before {
+  content: "";
+  position: absolute;
+  background: var(--purple-100);
+  border-radius: 11rem;
+  z-index: -1;
+  top: 6.25rem;
+  left: 0;
+  height: 11rem;
+  width: 11rem;
+}
+.rich-dad-section .image-container::after {
+  content: "";
+  position: absolute;
+  background: var(--purple-100);
+  border-radius: 11rem;
+  z-index: -1;
+  top: 6.25rem;
+  right: 0;
+  height: 11rem;
+  width: 11rem;
+}
+
+.rich-dad-section .image-rich-dad {
+  width: 15.625rem;
+  height: auto;
+}
+
+.rich-dad-section .text {
+  text-align: center;
+}
+
+.rich-dad-section .text h2 {
+  padding-bottom: 0.75rem;
+}
+
+.rich-dad-section .text .description {
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+}
