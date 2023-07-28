@@ -1,0 +1,104 @@
+.top-five {
+  padding-top: 6.25rem;
+}
+
+.top-five h2 {
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+.top-five .image-books {
+  width: clamp(15.625rem, 40vw, 23.7175rem);
+  height: auto;
+}
+
+.top-five .top-five-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+.top-five .top-five-section .image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.top-five .top-five-section .image-container.red-bg::before {
+  content: "";
+  width: clamp(19rem, 50vw, 30rem);
+  height: clamp(19rem, 50vw, 30rem);
+  left: auto;
+  right: auto;
+  position: absolute;
+  border-radius: 20rem;
+  z-index: var(--z-negative);
+  background: linear-gradient(180deg, #f5c2ca 0%, #eb8495 100%);
+}
+
+.top-five .top-five-section .image-container.blue-bg::before {
+  content: "";
+  width: clamp(19rem, 50vw, 30rem);
+  height: clamp(19rem, 50vw, 30rem);
+  left: auto;
+  right: auto;
+  position: absolute;
+  border-radius: 20rem;
+  z-index: var(--z-negative);
+  background: linear-gradient(180deg, #a6ddf8 0%, #7accf5 100%);
+}
+
+.top-five .top-five-section h3 {
+  padding-bottom: 0.75rem;
+}
+
+.top-five .top-five-section .rating,
+.top-five .top-five-section .description {
+  padding-bottom: 1.5rem;
+}
+
+/* desktop styles  */
+
+@media screen and (min-width: 1024px) {
+  .top-five {
+    padding-top: 13.75rem;
+  }
+  .top-five .top-five-section {
+    flex-direction: row;
+    width: 100%;
+    text-align: start;
+  }
+  .top-five .top-five-section .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .top-five .top-five-section .text {
+    width: clamp(22rem, 40vw, 36.25rem);
+  }
+
+  .top-five .top-five-section .image-container {
+    margin-left: 3.5rem;
+  }
+
+  .top-five .top-five-section {
+    padding-bottom: 8.75rem;
+  }
+
+  .top-five .top-five-section.homer .image-container {
+    order: 2;
+  }
+
+  .top-five .top-five-section h3 {
+    font-weight: var(--bold-font);
+    line-height: var(--display-line-height);
+    font-size: var(--display-2);
+    letter-spacing: var(--display-letter-spacing);
+  }
+}

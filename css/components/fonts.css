@@ -58,8 +58,8 @@
   /* letter spacing  */
   --display-1-letter-spacing: -2px;
   --display-letter-spacing: -2px;
-  --heading-1-letter-spacing: -2px;
-  --heading-2-letter-spacing: -1px;
+  --heading-1-letter-spacing: -1.5px;
+  --heading-2-letter-spacing: -1.5px;
   --heading-small-letter-spacing: -1px;
 }
 
@@ -92,6 +92,9 @@
     --body-1: 1.125rem;
     --body-2: 1rem;
     --body-3: 0.875rem;
+
+    --heading-1-letter-spacing: -2px;
+    --heading-2-letter-spacing: -2px;
 
     --display-1-letter-spacing: -3px;
   }
