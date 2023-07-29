@@ -84,7 +84,7 @@
   .it-section .image-container::before {
     content: "";
     width: clamp(35rem, 40vw, 43rem);
-    height: clamp(30rem, 45vw, 38rem);
+    height: clamp(30rem, 46vw, 38rem);
     background: linear-gradient(180deg, #eb8495 0%, #f5c2ca 100%);
     clip-path: ellipse(29% 40% at 50% 50%);
     background-repeat: no-repeat;
