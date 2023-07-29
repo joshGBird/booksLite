@@ -34,17 +34,17 @@
   right: auto;
 }
 
-.it-section .image-container::after {
+/* .it-section .image-container::after {
   content: "";
-  width: 18rem;
+  width: clamp(18rem, 40vw, 32rem);
   height: 8.125rem;
   background: url("../../media/img/assets/balloon-line.svg");
   background-repeat: no-repeat;
   position: absolute;
-  right: -6.5rem;
+  right: clamp(-6.5rem, 40vw, -2rem);
   bottom: -11rem;
   z-index: -1;
-}
+} */
 
 .it-section .text {
   text-align: center;

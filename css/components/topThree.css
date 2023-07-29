@@ -22,7 +22,7 @@
   z-index: var(--z-negative);
   background: linear-gradient(180deg, #66c497 0%, #ccebdc 100%);
   height: 17.5rem;
-  width: calc(100% + 32px);
+  width: calc(100% + 64px);
 }
 
 .maze-runner-section .maze-runner-image {
@@ -42,4 +42,42 @@
 .maze-runner-section .text .description {
   padding-bottom: 1.5rem;
   padding-top: 1.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .maze-runner-section .wrapper {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .maze-runner-section .maze-runner-image {
+    width: clamp(22rem, 30vw, 29rem);
+    height: auto;
+  }
+
+  .maze-runner-section .image-container {
+    order: 0;
+    height: max-content;
+    width: max-content;
+  }
+
+  .maze-runner-section .image-container::before {
+    content: "";
+    position: absolute;
+    top: -5%;
+    left: -100%;
+    z-index: var(--z-negative);
+    background: linear-gradient(180deg, #66c497 0%, #ccebdc 100%);
+    height: 110%;
+    border-radius: 0rem 1rem 1rem 0rem;
+    width: calc(150% + 32px);
+  }
+
+  .maze-runner-section .text {
+    width: 34rem;
+    text-align: start;
+  }
 }
