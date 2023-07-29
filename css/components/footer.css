@@ -1,0 +1,25 @@
+.footer {
+  padding-top: 7.5rem;
+  padding-bottom: 5rem;
+}
+
+.footer .logo {
+  margin-bottom: 3rem;
+}
+
+.footer .menu {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+.footer .social {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 5rem;
+}
+
+.footer .mail-link {
+  display: inline-flex;
+  gap: 0.25rem;
+}

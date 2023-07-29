@@ -111,4 +111,8 @@
     width: 32rem;
     text-align: start;
   }
+
+  .it-section {
+    padding-bottom: 8rem;
+  }
 }

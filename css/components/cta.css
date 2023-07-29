@@ -1,0 +1,36 @@
+.cta-section {
+  position: relative;
+}
+
+.cta-section .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cta-section .text {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.cta-section .text h2 {
+  padding-bottom: 1.5rem;
+}
+
+.grid-images {
+  width: 180%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-img {
+  width: 100%;
+  height: auto;
+}
+.grid-img:nth-of-type(2) {
+  padding-top: 1rem;
+}
+
+.grid-img.middle {
+  display: none;
+}

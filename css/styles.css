@@ -19,3 +19,5 @@ To create a structure like this, you should use SCSS instead. */
 @import url("components/topThree.css");
 @import url("components/topTwo.css");
 @import url("components/topOne.css");
+@import url("components/cta.css");
+@import url("components/footer.css");
