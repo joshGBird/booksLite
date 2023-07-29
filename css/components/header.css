@@ -62,12 +62,11 @@
   }
 
   .header .logo {
-    display: inline-block;
-    position: absolute;
-    width: 100%;
     display: flex;
-    top: 0.75rem;
-    justify-content: center;
+    width: 100%;
+    padding-bottom: 0.75rem;
+    padding-left: 1rem;
+    justify-content: start;
   }
 
   .header .nav span {
