@@ -37,6 +37,12 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .grid-images {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
   .grid-img.middle {
     display: block;
   }

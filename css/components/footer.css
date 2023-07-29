@@ -1,4 +1,5 @@
 .footer {
+  width: 100%;
   padding-top: 7.5rem;
   padding-bottom: 5rem;
 }
@@ -22,4 +23,25 @@
 .footer .mail-link {
   display: inline-flex;
   gap: 0.25rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer .wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer .menu {
+    margin-bottom: 0;
+  }
+
+  .footer .logo {
+    margin-bottom: 0;
+  }
+
+  .footer .social {
+    margin-bottom: 0;
+  }
 }
