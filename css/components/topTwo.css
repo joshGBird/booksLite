@@ -24,27 +24,29 @@
 
 .it-section .image-container::before {
   content: "";
-  width: 19.688rem;
-  height: 22.313rem;
-  background: url("../../media/img/assets/balloon-svg.svg");
+  width: 28rem;
+  height: 24rem;
+  background: linear-gradient(180deg, #eb8495 0%, #f5c2ca 100%);
+  clip-path: ellipse(29% 40% at 50% 50%);
   background-repeat: no-repeat;
   position: absolute;
-  top: -2rem;
+  top: -4rem;
   left: auto;
   right: auto;
 }
 
-/* .it-section .image-container::after {
+.it-section .image-container::after {
   content: "";
-  width: clamp(18rem, 40vw, 32rem);
-  height: 8.125rem;
-  background: url("../../media/img/assets/balloon-line.svg");
+  width: 3rem;
+  height: 1.8rem;
+  background: linear-gradient(180deg, #f5c2ca 0%, #f5c2ca 100%);
   background-repeat: no-repeat;
   position: absolute;
-  right: clamp(-6.5rem, 40vw, -2rem);
-  bottom: -11rem;
-  z-index: -1;
-} */
+  z-index: var(--z-negative);
+  bottom: -2rem;
+  border-radius: 0.5rem;
+  clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 4% 82%);
+}
 
 .it-section .text {
   text-align: center;
@@ -58,4 +60,55 @@
 .it-section .text .description {
   padding-bottom: 1.5rem;
   padding-top: 1.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .it-section .wrapper {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .it-section .image-it {
+    width: clamp(26rem, 40vw, 34rem);
+    height: auto;
+  }
+
+  .it-section .image-container {
+    order: 2;
+    height: max-content;
+    width: max-content;
+  }
+  .it-section .image-container::before {
+    content: "";
+    width: clamp(35rem, 40vw, 43rem);
+    height: clamp(30rem, 45vw, 38rem);
+    background: linear-gradient(180deg, #eb8495 0%, #f5c2ca 100%);
+    clip-path: ellipse(29% 40% at 50% 50%);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -4rem;
+    left: auto;
+    right: auto;
+  }
+
+  .it-section .image-container::after {
+    content: "";
+    width: 3rem;
+    height: 1.8rem;
+    background: linear-gradient(180deg, #f5c2ca 0%, #f5c2ca 100%);
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: var(--z-negative);
+    bottom: -1rem;
+    border-radius: 0.5rem;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 4% 82%);
+  }
+
+  .it-section .text {
+    width: 32rem;
+    text-align: start;
+  }
 }

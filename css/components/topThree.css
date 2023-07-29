@@ -45,6 +45,9 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .maze-runner-section {
+    padding-bottom: 13.75rem;
+  }
   .maze-runner-section .wrapper {
     display: flex;
     flex-direction: row;
@@ -54,7 +57,7 @@
   }
 
   .maze-runner-section .maze-runner-image {
-    width: clamp(22rem, 30vw, 29rem);
+    width: clamp(23rem, 35vw, 29rem);
     height: auto;
   }
 
