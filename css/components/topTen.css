@@ -17,6 +17,16 @@
   padding-bottom: 10rem;
 }
 
+.top-ten .arrows {
+  display: flex;
+  gap: 1rem;
+}
+
+.top-ten .arrows .arrow-svg {
+  height: 2rem;
+  width: 2rem;
+}
+
 .top-ten .book-cards {
   width: 100%;
   position: relative;
@@ -88,6 +98,16 @@
 
   .header-top-ten {
     padding-bottom: 11rem;
+  }
+
+  .top-ten .arrows .arrow-svg {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  .top-ten .arrows {
+    display: flex;
+    gap: 2rem;
   }
 }
 
